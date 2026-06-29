@@ -1,0 +1,8 @@
+{
+  "name": "lang-styles",
+  "description": "Writing-register skills for technical artifacts. Each skill encodes one language style — lead with the fact, one claim per line, cut hedging and quality-adjectives. First register: changelog (what-only).",
+  "author": {
+    "name": "abridge",
+    "email": "alexbridge.de@gmail.com"
+  }
+}

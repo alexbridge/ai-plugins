@@ -1,0 +1,35 @@
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Claude Code local state (per-user, not shared)
+.claude/settings.local.json
+.claude/memory/
+.claude/shell-snapshots/
+.claude/todos/
+.claude/projects/
+.claude/statsig/
+.claude/.credentials.json
+.claude/sessions/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (skills/plugins may use it)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python (skills/plugins may use it)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Logs / tmp
+*.log
+tmp/
