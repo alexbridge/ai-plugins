@@ -17,7 +17,8 @@ Not for: TRD/design docs (rationale stays), commit bodies (the why belongs there
 
 ## Rules
 
-- One fact per line. Split compound bullets — a `;` or "so that" / "because" means two lines or a cut.
+- One feature per bullet. Fold its facets (sub-commands, options, UI entry points, persistence) into that single line, comma- or semicolon-separated — don't spread one feature across 5+ bullets.
+- Split bullets only across *distinct* features or fixes, not across aspects of the same one. A `because` / "so that" is still a cut (the why), not a split.
 - Lead with the changed thing or behavior.
 - Present tense, declarative. "Binary cells render as `<binary N bytes>`." Not "We now render…".
 - Drop the why. No "to avoid…", "because…", "so that…", "this prevents…".
@@ -43,6 +44,22 @@ If the reader needs the why, it belongs in the commit body or the linked ticket 
 **Good** (what-only, one fact per line):
 > - CSV/Markdown export: binary cells export as the JSON marker, same as SQL Insert.
 
+## Grouping facets of one feature
+
+**Bad** (one feature spread across 7 bullets):
+> - Connection tree: separator rows group connections.
+> - `Add Separator` button in the tree title bar.
+> - Separator label accepts any text, including emoji.
+> - Connections and separators reorder via inline `Move Up` / `Move Down`.
+> - Separators rename and delete inline.
+> - Deleting a separator keeps the connections under it.
+> - Connection order and separators persist across reloads.
+
+**Good** (one bullet, facets folded):
+> - Connection tree: separator rows group connections; add from the title bar, rename/delete inline, reorder with `Move Up` / `Move Down`, labels accept emoji. Order persists across reloads.
+
 ## Smell test
 
 Read the line alone. If it tells the reader *why* the change exists rather than *what* changed — cut the why or move it to the commit/ticket.
+
+Read the section. If 4+ bullets all name the same feature, fold them into one bullet with the facets inline.
