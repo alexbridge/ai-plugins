@@ -1,0 +1,8 @@
+{
+  "name": "dev-backend-nestjs",
+  "description": "NestJS backend development skills — module structure, project conventions, API and persistence patterns.",
+  "author": {
+    "name": "abridge",
+    "email": "alexbridge.de@gmail.com"
+  }
+}

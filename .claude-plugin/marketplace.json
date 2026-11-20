@@ -11,6 +11,16 @@
       "name": "lang-styles",
       "source": "./plugins/lang-styles",
       "description": "Language styles skill, communication lang styles"
+    },
+    {
+      "name": "dev-frontend-angular",
+      "source": "./plugins/dev-frontend-angular",
+      "description": "Angular frontend development skills, FE module structures"
+    },
+    {
+      "name": "dev-backend-nestjs",
+      "source": "./plugins/dev-backend-nestjs",
+      "description": "NestJS backend development skills, BE module structures"
     }
   ]
 }
